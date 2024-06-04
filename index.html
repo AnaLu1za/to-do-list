@@ -44,13 +44,27 @@
                     </button>
                 </form>
             </div>
-            <div class="filter">
+            <div id="filter">
                 <h4>Filtrar:</h4>
                 <select id="filter-select">
                     <option value="all">Todos</option>
-                    <option value="all">Feitos</option>
-                    <option value="all">A fazer</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
                 </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo">
+                <h3>Estou fazendo algo...</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
      </div>
