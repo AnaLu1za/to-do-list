@@ -23,6 +23,7 @@
                     <i class="fa-thin fa-plus"></i>
                 </button>
             </div>
+        </form>
             <form id="edit-form">
                 <p>Edite a sua tarefa:</p>
                 <div class="form-control">
@@ -31,8 +32,20 @@
                     <i class="fa-solid fa-check-do"></i>
                 </button>
             </div>
-            </form>
+            <button id="cancel-edit-btn">Cancelar</button> <!--Serve para que o usuario possa cancelar a edição-->
         </form>
+        <div class="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button id="erase-button"> <!--Serve para apagar o que o usuario digitou-->
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
      </div>
 </body>
 </html>
