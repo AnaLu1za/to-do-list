@@ -103,14 +103,42 @@
   }
   
   #filter select {
-    padding: 12px; /* Increased input and select field padding */
-    border: 1px solid #ddd; /* Slightly lighter gray border */
-    border-radius: 5px; /* More rounded corners for input and select */
-    font-size: 1rem; /* Tamanho do texto para entrada e seleção   */
+    padding: 12px; /* Aumento da entrada e seleção do preenchimento do campo */
+    border: 1px solid #ddd; /* Borda cinza um pouco mais clara */
+    border-radius: 5px; /* Cantos mais arredondados para entrada e seleção */
+    font-size: 1rem; /* Tamanho do texto para entrada e seleção */
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Sombra sutil inserida */
   }
   
-  
+  .edit-todo {
+    background-color: #f0ad4e; /* Cor do botão laranja para editar */
+    color: white; /* Texto do botão branco  */
+    border: none; /* Remove borda do botão */
+    padding: 5px; /* Preenchimento de botão menor  */
+    border-radius: 3px; /* Cantos arredondados para o botão */
+    cursor: pointer; /* Indica o botão clicável */
+    margin-left: 5px; /* Espaçamento após entrada de pesquisa */
+  }
+
+  .finish-todo {
+    background-color: #4CAF50; /* Cor do botão verde para afirmar */
+    color: white; /* Texto do botão branco  */
+    border: none; /* Remove borda do botão */
+    padding: 5px; /* Preenchimento de botão menor  */
+    border-radius: 3px; /* Cantos arredondados para o botão */
+    cursor: pointer; /* Indica o botão clicável */
+    margin-left: 5px; /* Espaçamento após entrada de pesquisa */
+  }
+
+  .remove-todo {
+    background-color: #f04e4e; /* Cor do botão vermelho para apagar */
+    color: white; /* Texto do botão branco  */
+    border: none; /* Remove borda do botão */
+    padding: 5px; /* Preenchimento de botão menor  */
+    border-radius: 3px; /* Cantos arredondados para o botão */
+    cursor: pointer; /* Indica o botão clicável */
+    margin-left: 5px; /* Espaçamento após entrada de pesquisa */
+  }
 
 .right h1 {     
   position: absolute; /* Posiciona o elemento de forma absoluta em relação ao seu contêiner mais próximo */
