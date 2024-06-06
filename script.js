@@ -195,7 +195,7 @@ todoForm.addEventListener("submit", (e) => {
   
     filterTodos(filterValue);
   });
-  
+
 // Local Storage
 const getTodosLocalStorage = () => {
     const todos = JSON.parse(localStorage.getItem("todos")) || [];
@@ -247,4 +247,4 @@ const getTodosLocalStorage = () => {
     localStorage.setItem("todos", JSON.stringify(todos));
   };
   
-  loadTodos();
+  loadTodos(); //é chamada no final do código para carregar e exibir as tarefas salvas na inicialização da página.
