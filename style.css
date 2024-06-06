@@ -1,0 +1,141 @@
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Garante que a largura/altura inclua preenchimento e borda */
+  }
+
+  body { 
+    font-family: sans-serif; /* Define uma família de fontes padrão */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto cinza escuro */
+  }
+  
+  .todo-container {
+    width: 800px; /* Define a largura do contêiner de tarefas */
+    margin: 50px auto; /* Centraliza o contêiner horizontalmente e verticalmente */
+    background-color: #fff; /* Fundo branco do contêiner */
+    border-radius: 5px; /* Cantos arredondados para o contêiner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+    padding: 30px; /* Preenchimento para espaçamento de conteúdo */
+  }
+  
+  header {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Tamanho grande do cabeçalho */
+    margin-bottom: 20px; /* Espaçamento após o cabeçalho */
+  }
+  
+  form {
+    display: flex; /* Organiza os elementos do formulário horizontalmente em uma linha */
+    margin-bottom: 20px; /* Espaçamento após o formulário */
+  }
+  
+  .form-control {
+    flex-grow: 1; /* Faz com que o campo de entrada preencha o espaço disponível no formulário */
+    margin-right: 10px; /* Espaçamento entre o campo de entrada e o botão */
+  }
+  
+  #todo-input,
+  #edit-input {
+    padding: 10px; /* Preenchimento do campo de entrada */
+    border: 1px solid #ccc; /* Borda cinza claro para o campo de entrada */
+    border-radius: 3px; /* Cantos arredondados para o campo de entrada */
+    font-size: 1rem; /* Tamanho do texto do campo de entrada */
+  }
+  
+  #todo-form button,
+  #edit-form button {
+    background-color: #4CAF50; /* Cor verde para botões */
+    color: white; /* Cor do texto branco para botões */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 15px; /* Preenchimento do botão */
+    border-radius: 3px; /* Cantos arredondados para botões */
+    cursor: pointer; /* Indica botão clicável */
+  }
+  
+  #todo-form button:hover,
+  #edit-form button:hover {
+    background-color: #3e8e41; /* Verde mais escuro ao passar o mouse sobre o botão */
+  }
+  
+  #cancel-edit-btn {
+    background-color: #f0ad4e; /* Cor laranja para o botão cancelar */
+    color: white; /* Cor do texto branco para o botão cancelar */
+    border: none; /* Remove a borda do botão cancelar */
+    padding: 5px 10px; /* Preenchimento menor para o botão cancelar */
+    border-radius: 3px; /* Cantos arredondados para o botão cancelar */
+    cursor: pointer; /* Indica botão cancelar clicável */
+    margin-left: 10px; /* Espaçamento após o campo de entrada de edição */
+  }
+  
+  #cancel-edit-btn:hover {
+    background-color: #d68b1e; /* Laranja mais escuro ao passar o mouse sobre o botão cancelar */
+  }
+  
+  .toolbar {
+    display: flex; /* Organiza os elementos da barra de ferramentas horizontalmente em uma linha */
+    justify-content: space-between; /* Espaça os itens da barra de ferramentas uniformemente */
+    margin-bottom: 20px; /* Espaçamento após a barra de ferramentas */
+  }
+  
+  #search input{
+    padding: 7px; /* Preenchimento para campos de entrada e seleção */
+    border: 1px solid #ccc; /* Borda cinza clara  */
+    border-radius: 3px; /* Cantos arredondados para entrada e seleção */
+    font-size: 1rem; /* Tamanho do texto para entrada e seleção */
+  }
+  
+  #erase-button {
+    background-color: #f0ad4e; /* Cor do botão laranja para apagar */
+    color: white; /* Texto do botão branco  */
+    border: none; /* Remove borda do botão */
+    padding: 5px; /* Preenchimento de botão menor  */
+    border-radius: 3px; /* Cantos arredondados para o botão */
+    cursor: pointer; /* Indica o botão clicável */
+    margin-left: 5px; /* Espaçamento após entrada de pesquisa */
+  }
+  
+  #erase-button:hover {
+    background-color: #d68b1e; /* Laranja mais escuro ao passar o mouse */
+  }
+  
+  #filter select {
+    padding: 12px; /* Increased input and select field padding */
+    border: 1px solid #ddd; /* Slightly lighter gray border */
+    border-radius: 5px; /* More rounded corners for input and select */
+    font-size: 1rem; /* Tamanho do texto para entrada e seleção   */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Sombra sutil inserida */
+  }
+  
+  
+
+.right h1 {     
+  position: absolute; /* Posiciona o elemento de forma absoluta em relação ao seu contêiner mais próximo */
+  right: 310px; /* Distancia o elemento 310px da borda direita do contêiner */
+  top: 10%; /* Posiciona o elemento a 10% do topo do contêiner */
+}   
+
+  .right {       
+    width: 50vw; /* Define a largura como 50% da viewport (área visível do navegador) */ 
+    right: 100vh; /* Define a distância da borda direita do contêiner como 100% da viewport */ 
+    display:flex; /* Organiza os elementos filhos como uma linha flexível */
+    justify-content: center; /* Alinha os elementos filhos horizontalmente ao centro */      
+    align-items: center;  /* Alinha os elementos filhos verticalmente ao centro */
+    flex-direction: column; /* Define a direção dos elementos filhos como uma coluna */
+  } 
+
+    .right img {     
+      width: 35vw; /* Define a largura da imagem como 35% da viewport */
+      position: absolute; /* Posiciona a imagem de forma absoluta em relação ao seu contêiner pai (.right) */
+      bottom: 90px; /* Distancia a imagem 90px da borda inferior do contêiner */
+      left: 9px; /* Distancia a imagem 9px da borda esquerda do contêiner */
+    } 
+    
+    .left {
+        position: absolute; /* Posiciona o elemento de forma absoluta em relação ao seu contêiner mais próximo */
+        right: 80px; /* Distancia o elemento 80px da borda direita do contêiner */
+        top: 13%; /* Posiciona o elemento a 13% do topo do contêiner */
+    }
